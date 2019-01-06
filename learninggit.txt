@@ -1,0 +1,40 @@
+I recently applied for a sysops job and learned I would have to develop some
+of my skills in order to contend not just in that field, but any field into which I wished to emerge. I started right away with the ultimate goal of being able to
+exit the field I'm in currently (working on an anti-spam solution) and gracefully
+enter a new one. 
+
+On my to do list were:
+
+1. Learn Docker as thoroughly as possible:
+    - I dove right in and revamped my own web presence from an extremely basic
+      Apache-served HTML copy of my resume into a three-tier Wordpress site
+      running from Docker containers, behind an Nginx proxy. My database also
+      runs inside a docker container, and all the backups and configuration files
+      I might need to change are held in volumes on the host machine (an EC2 
+      instance). The backup process could be simplified, I'm sure. As it is I gzip
+      a copy of the directory the container runs from and then scp that to my main
+      machine.
+    - Next, I'd like to rework the whole thing again. I'm planning on running
+      Wordpress, but I'd like to use AWS S3 for media management and AWS RDS for
+      my database needs. This is less based on my needs, I suppose, as getting 
+      used to how data and networking are managed with docker containers.
+2. Learn Git:
+    - This is basic and I put it off for a really long time, thinking "I'm not a
+      developer, why would I use git?" but I do get how it's convenient, 
+      especially after working with cloud-formation and seeing how images are
+      pulled from repositories. I actually threw my resume.html onto github 
+      (from command line to practice adding files to the staging area, and then
+      commiting them to a repository.
+    - During my phone interview I was told that particular company uses Git Flow 
+      so I looked into it and found it to be really intuitive. I now keep a 
+      separate branch for development running for my little python project.
+3. Learn Python:
+    - This one is intense, and was daunting (and I'm NOT going to claim I've 
+      learned Python yet). I started a class on Udemy to learn Python 3, and at
+      the time of this writing I'm roughly 25% of the way through that class. 
+    - I've started a Python project of my own. The first version was a rough
+      die roller capable of taking user input to calculate the number of sides
+      on the die. It would then return a number and end. The most recent iteration      does the same as before, but then asks the user if they'd like to roll
+      again, takes more input for the number of sides, and continues until the 
+      user replies 'no'.
+    - I will continue learning Python, but had to sort of slow that down to focus       on Docker and some other technologies I wasn't familiar with before.
